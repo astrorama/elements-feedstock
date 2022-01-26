@@ -1,6 +1,6 @@
 {% set name = "Elements" %}
-{% set version = "5.12.0" %}
-{% set build_number = 13 %}
+{% set version = "6.0.1" %}
+{% set build_number = 1 %}
 
 package:
     name: {{ name|lower }} 
@@ -10,7 +10,6 @@ source:
     git_rev: {{ version }}
     git_url: https://github.com/astrorama/Elements.git
     patches:
-        - macos_path.patch          # [osx]
         - arm64-apple_build.patch   # [osx]
 
 build:
