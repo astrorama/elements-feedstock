@@ -9,8 +9,6 @@ package:
 source:
     git_rev: {{ version }}
     git_url: https://github.com/astrorama/Elements.git
-    patches:
-        - arm64-apple_build.patch   # [osx]
 
 build:
     number: {{ build_number }}
