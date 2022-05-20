@@ -107,16 +107,41 @@ conda config --add channels astrorama
 conda config --set channel_priority strict
 ```
 
-Once the `astrorama` channel has been enabled, `elements` can be installed with:
+Once the `astrorama` channel has been enabled, `elements` can be installed with `conda`:
 
 ```
 conda install elements
 ```
 
-It is possible to list all of the versions of `elements` available on your platform with:
+or with `mamba`:
+
+```
+mamba install elements
+```
+
+It is possible to list all of the versions of `elements` available on your platform with `conda`:
 
 ```
 conda search elements --channel astrorama
+```
+
+or with `mamba`:
+
+```
+mamba search elements --channel astrorama
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search elements --channel astrorama
+
+# List packages depending on `elements`:
+mamba repoquery whoneeds elements --channel astrorama
+
+# List dependencies of `elements`:
+mamba repoquery depends elements --channel astrorama
 ```
 
 
