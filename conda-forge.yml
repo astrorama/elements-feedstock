@@ -1,5 +1,6 @@
 github:
   user_or_org: astrorama 
+  tooling_branch_name: main
 
 channels:
     targets:
