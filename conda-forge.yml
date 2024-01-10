@@ -2,10 +2,6 @@ github:
   user_or_org: astrorama 
   tooling_branch_name: main
 
-channels:
-    targets:
-      - ["astrorama", "main"]
-
 build_platform:
   osx_arm64: osx_64
 
