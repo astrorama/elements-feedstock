@@ -22,3 +22,8 @@
 /build_artifacts
 
 *.pyc
+
+# eclipse project files
+/.settings/
+/.pydevproject
+/.project
