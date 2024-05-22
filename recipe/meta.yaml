@@ -1,6 +1,6 @@
 {% set name = "Elements" %}
 {% set version = "6.3.0" %}
-{% set rev = "release-6.3" }
+{% set rev = "release-6.3" %}
 {% set build_number = 1 %}
 
 package:
