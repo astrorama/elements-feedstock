@@ -1,5 +1,6 @@
 {% set name = "Elements" %}
 {% set version = "6.3.0" %}
+{% set git_version "release-6.3" %}
 {% set build_number = 0 %}
 
 package:
@@ -7,7 +8,7 @@ package:
     version: {{ version }} 
 
 source:
-    git_rev: {{ version }}
+    git_rev: {{ git_version }}
     git_url: https://github.com/astrorama/Elements.git
     patches:
         - macos_path.patch          # [osx]
