@@ -1,7 +1,7 @@
 {% set name = "Elements" %}
 {% set version = "7.0.0" %}
 {% set rev = "release-7.0" %}
-{% set build_number = 5 %}
+{% set build_number = 6 %}
 
 package:
     name: {{ name|lower }} 
@@ -26,6 +26,7 @@ requirements:
         - make
         - {{ compiler('cxx') }}
         - libcxx<16
+        - pybind11 >=2.6
     host:
         - python
         - boost-cpp
