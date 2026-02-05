@@ -1,6 +1,6 @@
 {% set name = "Elements" %}
-{% set version = "6.4.0" %}
-{% set rev = "release-6.4" %}
+{% set version = "6.4" %}
+{% set rev = "feature/SupportCondaEden" %}
 {% set build_number = 0 %}
 
 package:
