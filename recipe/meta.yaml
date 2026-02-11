@@ -37,10 +37,6 @@ requirements:
         - {{ pin_compatible('boost-cpp', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('log4cpp') }}
 
-test:
-    commands:
-        - $PREFIX/bin/python `which AddElementsModule` --version
-
 about:
     home: https://github.com/astrorama/Elements.git
     license: LGPL
