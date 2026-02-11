@@ -25,12 +25,12 @@ requirements:
         - cmake >=3.25,<4.0
         - make
         - {{ compiler('cxx') }}
-        - libcxx<16
+        - libcxx
         - pybind11 >=2.6
     host:
         - python
         - boost-cpp
-        - libcxx<16
+        - libcxx
         - log4cpp >=1.1.3
     run:
         - {{ pin_compatible('python', min_pin='x.x', max_pin='x.x') }}
